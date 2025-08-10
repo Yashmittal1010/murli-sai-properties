@@ -4,73 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Murli Sai Properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+            background: #f7f7f7;
             color: #333;
         }
         header {
-            background: #004d40;
+            background: url('https://images.unsplash.com/photo-1560185127-6ed189bf02f4') center/cover no-repeat;
+            height: 65vh;
             color: white;
-            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 1rem;
         }
         header h1 {
-            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
         }
         header p {
-            font-size: 1.1rem;
-            margin: 0.5rem 0 0;
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
         }
         nav {
-            background: #00695c;
+            background: #004d40;
             display: flex;
             justify-content: center;
             gap: 1.5rem;
-            padding: 0.8rem 0;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
-            padding: 2rem;
+            padding: 2rem 1rem;
         }
-        .about, .services, .contact {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        section {
+            margin-bottom: 3rem;
         }
         h2 {
             color: #004d40;
-            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
         }
         .properties {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
         .property-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
         }
         .property-card img {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
+        }
+        .property-card p {
+            padding: 1rem;
+        }
+        .contact-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .contact-info a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        iframe {
+            margin-top: 1rem;
+            border-radius: 8px;
+            width: 100%;
+            height: 300px;
         }
         footer {
             background: #004d40;
@@ -85,55 +117,54 @@
 
     <header>
         <h1>Murli Sai Properties</h1>
-        <p>Buying & Selling Residential and Commercial Land in Tricity</p>
+        <p>Turning Land into Lifetime Investments in Tricity</p>
     </header>
 
     <nav>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
         <a href="#properties">Properties</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
-        <section id="about" class="about">
+
+        <section id="about">
             <h2>About Us</h2>
-            <p>Murli Sai Properties is your trusted real estate partner in Tricity. We specialize in buying and selling residential and commercial land, ensuring our clients get the best deals with complete transparency and trust.</p>
+            <p style="text-align: center; max-width: 800px; margin: auto;">
+                Murli Sai Properties is your trusted real estate partner in Tricity. We specialize in buying and selling residential and commercial land, delivering transparent deals and expert consultation to help you make the right investment.
+            </p>
         </section>
 
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Buying & Selling Residential Land</li>
-                <li>Buying & Selling Commercial Land</li>
-                <li>Property Consultation</li>
-                <li>Legal Assistance in Property Deals</li>
-            </ul>
-        </section>
-
-        <section id="properties" class="properties-section">
+        <section id="properties">
             <h2>Featured Properties</h2>
             <div class="properties">
                 <div class="property-card">
-                    <img src="https://via.placeholder.com/300x180" alt="Residential Plot">
-                    <p><strong>Residential Plot</strong> – Prime location in Mohali</p>
+                    <img src="https://images.unsplash.com/photo-1572120360610-d971b9b78825" alt="Residential Plot">
+                    <p><strong>Residential Plot</strong> – Prime location in Mohali with easy access to schools and markets.</p>
                 </div>
                 <div class="property-card">
-                    <img src="https://via.placeholder.com/300x180" alt="Commercial Land">
-                    <p><strong>Commercial Land</strong> – Perfect for business setup</p>
+                    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="Commercial Land">
+                    <p><strong>Commercial Land</strong> – Perfect for retail or office space in Chandigarh.</p>
                 </div>
                 <div class="property-card">
-                    <img src="https://via.placeholder.com/300x180" alt="Luxury Apartment">
-                    <p><strong>Luxury Apartment</strong> – Chandigarh city view</p>
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Luxury Apartment">
+                    <p><strong>Luxury Apartment</strong> – Modern interiors and city view in Panchkula.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact">
             <h2>Contact Us</h2>
-            <p>📞 Mobile: <a href="tel:+919888032200">+91 98880 32200</a></p>
-            <p>📧 Email: <a href="mailto:murlisaiproperties@gmail.com">murlisaiproperties@gmail.com</a></p>
+            <div class="contact-info">
+                <p>📞 Mobile: <a href="tel:+919888032200">+91 98880 32200</a></p>
+                <p>📧 Email: <a href="mailto:murlisaiproperties@gmail.com">murlisaiproperties@gmail.com</a></p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27465.274230978465!2d76.7794171!3d30.7333148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedec5f9b0a7f%3A0x9a1d89c98d6f4c8!2sChandigarh!5e0!3m2!1sen!2sin!4v1691513527894!5m2!1sen!2sin" 
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
         </section>
+
     </div>
 
     <footer>
@@ -142,3 +173,4 @@
 
 </body>
 </html>
+
