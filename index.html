@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murli Sai Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: #004d40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            background: #00695c;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.8rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .about, .services, .contact {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #004d40;
+            margin-top: 0;
+        }
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .property-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .property-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Murli Sai Properties</h1>
+        <p>Buying & Selling Residential and Commercial Land in Tricity</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Murli Sai Properties is your trusted real estate partner in Tricity. We specialize in buying and selling residential and commercial land, ensuring our clients get the best deals with complete transparency and trust.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Buying & Selling Residential Land</li>
+                <li>Buying & Selling Commercial Land</li>
+                <li>Property Consultation</li>
+                <li>Legal Assistance in Property Deals</li>
+            </ul>
+        </section>
+
+        <section id="properties" class="properties-section">
+            <h2>Featured Properties</h2>
+            <div class="properties">
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Residential Plot">
+                    <p><strong>Residential Plot</strong> – Prime location in Mohali</p>
+                </div>
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Commercial Land">
+                    <p><strong>Commercial Land</strong> – Perfect for business setup</p>
+                </div>
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Luxury Apartment">
+                    <p><strong>Luxury Apartment</strong> – Chandigarh city view</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>📞 Mobile: <a href="tel:+919888032200">+91 98880 32200</a></p>
+            <p>📧 Email: <a href="mailto:murlisaiproperties@gmail.com">murlisaiproperties@gmail.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Murli Sai Properties | All Rights Reserved
+    </footer>
+
+</body>
+</html>
